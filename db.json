@@ -1,0 +1,309 @@
+{
+  "users": [
+    {
+      "email": "dario@dario.com",
+      "password": "1234",
+      "name": "Dario",
+      "id": "2"
+    },
+    {
+      "email": "mario@rossi.com",
+      "password": "abcd",
+      "name": "Mario Rossi",
+      "id": "3"
+    },
+    {
+      "email": "fabrizio@delgiudice.com",
+      "password": "pass1",
+      "name": "Fabrizio Del Giudice",
+      "id": "6",
+      "favorites": [
+        {
+          "id": "567189",
+          "title": "Senza rimorso",
+          "overview": "John Kelly, un ex membro dei Navy SEAL, cerca vendetta per l'omicidio di sua moglie.",
+          "poster_path": "/zisnDuZBQWzio4ylon8AElnat7V.jpg",
+          "release_date": "2021-04-29",
+          "vote_average": 7.3
+        },
+        {
+          "id": "632357",
+          "title": "Il sacro male",
+          "overview": "Alice, una giovane ragazza, inizia a compiere miracoli dopo una visita della Vergine Maria.",
+          "poster_path": "/dxBTcvdH9d6apXZGnThPIVEJ376.jpg",
+          "release_date": "2021-03-31",
+          "vote_average": 7.3
+        }
+      ]
+    },
+    {
+      "email": "pippo@pippo.com",
+      "password": "qwerty",
+      "name": "Pippo",
+      "id": "7"
+    },
+    {
+      "email": "giovanni@esempio.com",
+      "password": "12345",
+      "name": "Giovanni",
+      "id": "8"
+    },
+    {
+      "email": "maria@rossi.com",
+      "password": "maria1",
+      "name": "Maria Rossi",
+      "id": "9"
+    },
+    {
+      "email": "giacomo@verdi.com",
+      "password": "verdi2",
+      "name": "Giacomo Verdi",
+      "id": "10"
+    },
+    {
+      "email": "anna@esempio.com",
+      "password": "anna123",
+      "name": "Anna",
+      "id": "11"
+    },
+    {
+      "email": "lucia@bianchi.com",
+      "password": "lucia",
+      "name": "Lucia Bianchi",
+      "id": "12"
+    },
+    {
+      "email": "paolo@esempio.com",
+      "password": "paolo1",
+      "name": "Paolo",
+      "id": "13"
+    },
+    {
+      "id": "3e4a",
+      "name": "Valerio",
+      "email": "persianivalerio0@gmail.com",
+      "password": "abcs"
+    }
+  ],
+  "favorites": [
+    {
+      "userId": 2,
+      "movieId": 460465,
+      "id": "6"
+    },
+    {
+      "userId": 2,
+      "movieId": 632357,
+      "id": "8"
+    },
+    {
+      "userId": 3,
+      "movieId": 804435,
+      "id": "9"
+    },
+    {
+      "userId": 3,
+      "movieId": 399566,
+      "id": "10"
+    },
+    {
+      "userId": 6,
+      "movieId": 632357,
+      "id": "20"
+    },
+    {
+      "id": "a9f9",
+      "userId": 2,
+      "movieId": {
+        "id": "460465",
+        "title": "Mortal Kombat",
+        "overview": "Un pugile fallito scopre un segreto di famiglia che lo conduce a un torneo mistico chiamato Mortal Kombat.",
+        "poster_path": "/iW03OMEI3htIAV1P8FwM867PLIj.jpg",
+        "release_date": "2021-04-07",
+        "vote_average": 7.6
+      }
+    },
+    {
+      "id": "214f",
+      "userId": 2,
+      "movieId": {
+        "id": "460465",
+        "title": "Mortal Kombat",
+        "overview": "Un pugile fallito scopre un segreto di famiglia che lo conduce a un torneo mistico chiamato Mortal Kombat.",
+        "poster_path": "/iW03OMEI3htIAV1P8FwM867PLIj.jpg",
+        "release_date": "2021-04-07",
+        "vote_average": 7.6
+      }
+    },
+    {
+      "id": "7f3a",
+      "userId": 2,
+      "movieId": {
+        "id": "460465",
+        "title": "Mortal Kombat",
+        "overview": "Un pugile fallito scopre un segreto di famiglia che lo conduce a un torneo mistico chiamato Mortal Kombat.",
+        "poster_path": "/iW03OMEI3htIAV1P8FwM867PLIj.jpg",
+        "release_date": "2021-04-07",
+        "vote_average": 7.6
+      }
+    },
+    {
+      "id": "b4e6",
+      "userId": 2,
+      "movieId": {
+        "id": "567189",
+        "title": "Senza rimorso",
+        "overview": "John Kelly, un ex membro dei Navy SEAL, cerca vendetta per l'omicidio di sua moglie.",
+        "poster_path": "/zisnDuZBQWzio4ylon8AElnat7V.jpg",
+        "release_date": "2021-04-29",
+        "vote_average": 7.3
+      }
+    },
+    {
+      "id": "7f19",
+      "userId": 2,
+      "movieId": {
+        "id": "460465",
+        "title": "Mortal Kombat",
+        "overview": "Un pugile fallito scopre un segreto di famiglia che lo conduce a un torneo mistico chiamato Mortal Kombat.",
+        "poster_path": "/iW03OMEI3htIAV1P8FwM867PLIj.jpg",
+        "release_date": "2021-04-07",
+        "vote_average": 7.6
+      }
+    },
+    {
+      "id": "dee6",
+      "userId": 2,
+      "movieId": {
+        "id": "578701",
+        "title": "Quelli che mi vogliono morto",
+        "overview": "Un ragazzino viene inseguito da due gemelli assassini nella natura selvaggia del Montana.",
+        "poster_path": "/qDGaNdeIwgHHXKYypo19oupxnrK.jpg",
+        "release_date": "2021-05-05",
+        "vote_average": 7.1
+      }
+    }
+  ],
+  "movies-popular": [
+    {
+      "id": "460465",
+      "title": "Mortal Kombat",
+      "overview": "Un pugile fallito scopre un segreto di famiglia che lo conduce a un torneo mistico chiamato Mortal Kombat.",
+      "poster_path": "/iW03OMEI3htIAV1P8FwM867PLIj.jpg",
+      "release_date": "2021-04-07",
+      "vote_average": 7.6
+    },
+    {
+      "id": "567189",
+      "title": "Senza rimorso",
+      "overview": "John Kelly, un ex membro dei Navy SEAL, cerca vendetta per l'omicidio di sua moglie.",
+      "poster_path": "/zisnDuZBQWzio4ylon8AElnat7V.jpg",
+      "release_date": "2021-04-29",
+      "vote_average": 7.3
+    },
+    {
+      "id": "578701",
+      "title": "Quelli che mi vogliono morto",
+      "overview": "Un ragazzino viene inseguito da due gemelli assassini nella natura selvaggia del Montana.",
+      "poster_path": "/qDGaNdeIwgHHXKYypo19oupxnrK.jpg",
+      "release_date": "2021-05-05",
+      "vote_average": 7.1
+    },
+    {
+      "id": "632357",
+      "title": "Il sacro male",
+      "overview": "Alice, una giovane ragazza, inizia a compiere miracoli dopo una visita della Vergine Maria.",
+      "poster_path": "/dxBTcvdH9d6apXZGnThPIVEJ376.jpg",
+      "release_date": "2021-03-31",
+      "vote_average": 7.3
+    },
+    {
+      "id": "804435",
+      "title": "Vanquish",
+      "overview": "Un'ex criminale è costretta a fare da corriere per salvare la sua famiglia.",
+      "poster_path": "/1jkNM1NHyHsxiBBuOlOeqgmidM0.jpg",
+      "release_date": "2021-04-16",
+      "vote_average": 6
+    },
+    {
+      "id": "399566",
+      "title": "Godzilla vs. Kong",
+      "overview": "La lotta tra i mostri Godzilla e Kong mette in pericolo il futuro dell'umanità.",
+      "poster_path": "/6Xq0gAxrm8KMAKWP4KYYhPWoQXM.jpg",
+      "release_date": "2021-03-24",
+      "vote_average": 8.1
+    },
+    {
+      "id": "615457",
+      "title": "Caos a Los Angeles",
+      "overview": "Due poliziotti scoprono una cospirazione nella città degli angeli.",
+      "poster_path": "/dxBTcvdH9d6apXZGnThPIVEJ376.jpg",
+      "release_date": "2021-06-15",
+      "vote_average": 7.5
+    },
+    {
+      "id": "567189",
+      "title": "Il Vendicatore Solitario",
+      "overview": "Un ex detective cerca di far giustizia in una città corrotta.",
+      "poster_path": "/zisnDuZBQWzio4ylon8AElnat7V.jpg",
+      "release_date": "2021-02-10",
+      "vote_average": 6.8
+    },
+    {
+      "id": "920556",
+      "title": "Missione Impossibile",
+      "overview": "Un agente segreto si trova di fronte alla missione più difficile della sua carriera.",
+      "poster_path": "/mYM8x2Atv4MaLulaV0KVJWI1Djv.jpg",
+      "release_date": "2021-07-20",
+      "vote_average": 7.9
+    },
+    {
+      "id": "301294",
+      "title": "La Trappola",
+      "overview": "Un gruppo di criminali pianifica una rapina in una piccola città.",
+      "poster_path": "/1jkNM1NHyHsxiBBuOlOeqgmidM0.jpg",
+      "release_date": "2021-03-05",
+      "vote_average": 7
+    },
+    {
+      "id": "650234",
+      "title": "Invasione Segreta",
+      "overview": "Una misteriosa forza aliena si infiltra sulla Terra.",
+      "poster_path": "/6Xq0gAxrm8KMAKWP4KYYhPWoQXM.jpg",
+      "release_date": "2021-08-01",
+      "vote_average": 7.4
+    },
+    {
+      "id": "735632",
+      "title": "Ritorno al Passato",
+      "overview": "Un uomo scopre di poter viaggiare nel tempo e cerca di cambiare il suo destino.",
+      "poster_path": "/iDdpiUnCeXvBmrkBFpL6lKsZt33.jpg",
+      "release_date": "2021-09-15",
+      "vote_average": 7.6
+    },
+    {
+      "id": "847123",
+      "title": "Ombre nella Notte",
+      "overview": "Un detective indaga su un serial killer che terrorizza una piccola città.",
+      "poster_path": "/dxBTcvdH9d6apXZGnThPIVEJ376.jpg",
+      "release_date": "2021-10-31",
+      "vote_average": 7.2
+    },
+    {
+      "id": "289341",
+      "title": "Il Riscatto",
+      "overview": "Un padre lotta contro il tempo per salvare la sua famiglia rapita.",
+      "poster_path": "/6ELCZlTA5lGUops70hKdB83WJxH.jpg",
+      "release_date": "2021-11-11",
+      "vote_average": 7.7
+    },
+    {
+      "id": "456923",
+      "title": "Sopravvissuti",
+      "overview": "Un gruppo di persone cerca di sopravvivere in un mondo post-apocalittico.",
+      "poster_path": "/qDGaNdeIwgHHXKYypo19oupxnrK.jpg",
+      "release_date": "2021-12-25",
+      "vote_average": 7.3
+    }
+  ]
+}

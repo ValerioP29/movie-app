@@ -1,0 +1,23 @@
+<mat-card>
+  <h2>Il mio Profilo</h2>
+  <p><strong>Nome:</strong> {{ user.name }}</p>
+  <p><strong>Email:</strong> {{ user.email }}</p>
+
+  <h3>I miei Preferiti</h3>
+  <div *ngIf="favoriteMovies && favoriteMovies.length > 0; else noFavorites">
+    <ul>
+      <li *ngFor="let movie of favoriteMovies">
+        <span>{{ movie.title }}</span>
+        <button mat-button color="primary" (click)="viewDetails(movie.id)">
+          Dettagli
+        </button>
+        <button mat-button color="warn" (click)="removeFavorite(movie.id)">
+          Rimuovi
+        </button>
+      </li>
+    </ul>
+  </div>
+  <ng-template #noFavorites>
+    <p>Non hai ancora aggiunto preferiti.</p>
+  </ng-template>
+</mat-card>
