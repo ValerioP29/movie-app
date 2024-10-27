@@ -1,22 +1,37 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
+import { MoviesService } from '../movies.service'; // Assicurati che MoviesService sia importato correttamente
 
 @Component({
-  selector: 'app-movies-details',
+  selector: 'app-movie-details',
   templateUrl: '../movie-details/movie-details.component.html',
   styleUrls: ['../movie-details/movie-details.component.scss']
 })
-export class MoviesDetailsComponent implements OnInit {
+export class MovieDetailsComponent implements OnInit {
+  movieId: string | null = null;
   movie: any;
 
-  constructor(private route: ActivatedRoute, private http: HttpClient) {}
+  constructor(
+    private route: ActivatedRoute,
+    private moviesService: MoviesService
+  ) {}
 
-  ngOnInit() {
-    const movieId = this.route.snapshot.paramMap.get('id');
-    this.http.get<any>(`http://localhost:3000/movies/${movieId}`).subscribe(
-      (movie) => (this.movie = movie),
-      (error) => console.error('Error loading movie details:', error)
+  ngOnInit(): void {
+    this.route.paramMap.subscribe(params => {
+      this.movieId = params.get('id');
+      if (this.movieId) {
+        this.getMovieDetails(this.movieId);
+      }
+    });
+  }
+
+  getMovieDetails(id: string): void {
+    this.moviesService.getMovieDetails(id).subscribe(
+      (movie: any) => {
+        console.log('Movie data received:', movie);
+        this.movie = movie;
+      },
+      (error) => console.error('Errore nel caricamento dei dettagli del film:', error)
     );
   }
 }

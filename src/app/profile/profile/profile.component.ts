@@ -1,4 +1,3 @@
-
 import { NotificationService } from './../../shared/notification.service';
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
@@ -53,13 +52,13 @@ export class ProfileComponent implements OnInit {
     );
   }
 
-  // Nuovo metodo per visualizzare i dettagli del film
+
   viewDetails(movieId: number) {
-    // Naviga a una pagina di dettagli del film. Assicurati di avere un percorso configurato nel tuo router per la pagina dei dettagli.
-    this.router.navigate(['/movie-details', movieId]);
+
+    this.router.navigate(['/movies/movie-details', movieId]);
   }
 
-  // Nuovo metodo per rimuovere un film dai preferiti
+
   removeFavorite(movieId: number) {
     const userId = this.authService.getUserId();
     if (!userId) {
@@ -67,7 +66,7 @@ export class ProfileComponent implements OnInit {
       return;
     }
 
-    // Filtra la lista dei preferiti per rimuovere il film selezionato
+
     const updatedFavorites = this.favoriteMovies.filter(movie => movie.id !== movieId);
 
     this.authService.updateFavorites(userId, updatedFavorites).subscribe(

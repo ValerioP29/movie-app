@@ -29,4 +29,10 @@ export class MoviesService {
   removeFavorite(favoriteId: number): Observable<any> {
     return this.http.delete(`${this.apiUrl}/favorites/${favoriteId}`);
   }
+
+getMovieDetails(id: string): Observable<any> {
+
+  return this.http.get<any>(`${this.apiUrl}/movies-popular/${id}`);
+}
+
 }

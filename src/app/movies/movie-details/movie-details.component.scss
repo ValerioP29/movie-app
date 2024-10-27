@@ -1,0 +1,58 @@
+/* movie-details.component.scss */
+.movie-details-card {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+}
+
+.movie-image-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.movie-image-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.movie-title {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 10px 0;
+  color: #333;
+  text-align: center;
+}
+
+.movie-release-date,
+.movie-rating {
+  font-size: 1em;
+  color: #666;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.movie-rating mat-icon {
+  vertical-align: middle;
+}
+
+.movie-overview {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #444;
+  margin: 20px 0;
+  text-align: justify;
+}
+
+.mat-card-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+button[mat-raised-button] {
+  margin-left: 10px;
+  font-weight: bold;
+}

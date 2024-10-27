@@ -1,11 +1,17 @@
 <div class="movies-list">
   <mat-card *ngFor="let movie of movies" class="movie-card">
-    <img mat-card-image [src]="movie.posterUrl" alt="{{ movie.title }}" />
+    <div class="movie-image-container">
+      <img
+        mat-card-image
+        [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path"
+        alt="{{ movie.title }}"
+      />
+    </div>
     <mat-card-content>
-      <h3>{{ movie.title }}</h3>
-      <p>{{ movie.description }}</p>
+      <h3 class="movie-title">{{ movie.title }}</h3>
+      <p class="movie-description">{{ movie.description }}</p>
     </mat-card-content>
-    <mat-card-actions>
+    <mat-card-actions align="end">
       <button mat-button color="primary" (click)="addFavorite(movie)">
         Aggiungi ai Preferiti
       </button>

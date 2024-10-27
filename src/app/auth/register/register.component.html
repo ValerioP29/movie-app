@@ -1,18 +1,25 @@
-<mat-card>
-  <h2>Register</h2>
+<mat-card class="register-card">
+  <div class="register-header">
+    <h2>Register</h2>
+    <p>Crea un account per iniziare</p>
+  </div>
+
   <form (ngSubmit)="onRegister()">
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline" class="full-width">
       <mat-label>Name</mat-label>
+      <mat-icon matPrefix>person</mat-icon>
       <input matInput type="text" [(ngModel)]="name" name="name" required />
     </mat-form-field>
 
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline" class="full-width">
       <mat-label>Email</mat-label>
+      <mat-icon matPrefix>email</mat-icon>
       <input matInput type="email" [(ngModel)]="email" name="email" required />
     </mat-form-field>
 
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline" class="full-width">
       <mat-label>Password</mat-label>
+      <mat-icon matPrefix>lock</mat-icon>
       <input
         matInput
         type="password"
@@ -22,8 +29,9 @@
       />
     </mat-form-field>
 
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline" class="full-width">
       <mat-label>Confirm Password</mat-label>
+      <mat-icon matPrefix>lock</mat-icon>
       <input
         matInput
         type="password"
@@ -33,6 +41,17 @@
       />
     </mat-form-field>
 
-    <button mat-raised-button color="primary" type="submit">Register</button>
+    <button
+      mat-raised-button
+      color="primary"
+      type="submit"
+      class="full-width register-button"
+    >
+      Register
+    </button>
+
+    <div class="register-footer">
+      <p>Hai già un account? <a href="#" class="login-link">Login</a></p>
+    </div>
   </form>
 </mat-card>

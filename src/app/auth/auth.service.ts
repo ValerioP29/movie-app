@@ -13,7 +13,9 @@ export class AuthService {
   private apiUrl = 'http://localhost:3000';
   user: any = null;
 
-  constructor(private http: HttpClient, private router: Router) {}
+  constructor(private http: HttpClient, private router: Router) {
+    this.isAuthenticated.next(this.isLoggedIn());
+  }
 
 
   login(credentials: { email: string; password: string }): Observable<{ token: string }> {
@@ -30,6 +32,7 @@ export class AuthService {
           localStorage.setItem('token', token);
 
           this.isAuthenticated.next(true);
+          this.setTokenExpiration(3600000);
           return { token };
         } else {
           throw new Error('Invalid credentials');

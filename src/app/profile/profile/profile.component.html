@@ -1,23 +1,37 @@
-<mat-card>
-  <h2>Il mio Profilo</h2>
-  <p><strong>Nome:</strong> {{ user.name }}</p>
-  <p><strong>Email:</strong> {{ user.email }}</p>
+<mat-card class="profile-card">
+  <div class="profile-header">
+    <h2>Il mio Profilo</h2>
+    <p><strong>Nome:</strong> {{ user.name }}</p>
+    <p><strong>Email:</strong> {{ user.email }}</p>
+  </div>
 
-  <h3>I miei Preferiti</h3>
-  <div *ngIf="favoriteMovies && favoriteMovies.length > 0; else noFavorites">
-    <ul>
-      <li *ngFor="let movie of favoriteMovies">
-        <span>{{ movie.title }}</span>
+  <h3 class="favorites-title">I miei Preferiti</h3>
+  <div
+    *ngIf="favoriteMovies && favoriteMovies.length > 0; else noFavorites"
+    class="favorites-list"
+  >
+    <mat-card *ngFor="let movie of favoriteMovies" class="favorite-movie-card">
+      <img
+        mat-card-image
+        [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path"
+        alt="{{ movie.title }}"
+      />
+
+      <mat-card-content>
+        <h4>{{ movie.title }}</h4>
+      </mat-card-content>
+      <mat-card-actions align="end">
         <button mat-button color="primary" (click)="viewDetails(movie.id)">
           Dettagli
         </button>
         <button mat-button color="warn" (click)="removeFavorite(movie.id)">
           Rimuovi
         </button>
-      </li>
-    </ul>
+      </mat-card-actions>
+    </mat-card>
   </div>
+
   <ng-template #noFavorites>
-    <p>Non hai ancora aggiunto preferiti.</p>
+    <p class="no-favorites-message">Non hai ancora aggiunto preferiti.</p>
   </ng-template>
 </mat-card>

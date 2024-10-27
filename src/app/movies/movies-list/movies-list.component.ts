@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MoviesService } from '../movies.service';
 import { NotificationService } from '../../shared/notification.service';
 import { AuthService } from '../../auth/auth.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-movies-list',
   templateUrl: './movies-list.component.html',
@@ -13,7 +14,8 @@ export class MoviesListComponent implements OnInit {
   constructor(
     private moviesService: MoviesService,
     private notificationService: NotificationService,
-    private authService: AuthService
+    private authService: AuthService,
+    private router: Router
   ) {}
 
   ngOnInit() {
