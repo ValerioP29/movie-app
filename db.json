@@ -5,52 +5,41 @@
       "password": "Pass1",
       "name": "Dario",
       "id": "2",
-      "favorites": [
-        {
-          "adult": false,
-          "backdrop_path": "/fPGeS6jgdLovQAKunNHX8l0avCy.jpg",
-          "genre_ids": [
-            28,
-            53,
-            10752
-          ],
-          "id": "567189",
-          "original_language": "en",
-          "original_title": "Tom Clancy's Without Remorse",
-          "overview": "John Kelly, un ex membro dei Navy SEAL, nel tentativo di vendicare l’omicidio di sua moglie, si ritroverà invischiato in una cospirazione ben più grande e pericolosa di quanto avrebbe potuto mai immaginare.",
-          "popularity": 1840.479,
-          "poster_path": "/zisnDuZBQWzio4ylon8AElnat7V.jpg",
-          "release_date": "2021-04-29",
-          "title": "Senza rimorso",
-          "video": false,
-          "vote_average": 7.3,
-          "vote_count": 999
-        }
-      ]
+      "age": 33,
+      "photo": "https://randomuser.me/api/portraits/men/1.jpg",
+      "favorites": []
     },
     {
       "email": "mario@rossi.com",
       "password": "pass2",
       "name": "Mario Rossi",
-      "id": "3"
+      "id": "3",
+      "age": 28,
+      "photo": "https://randomuser.me/api/portraits/men/1.jpg"
     },
     {
       "email": "fabrizio@fabrizi.com",
       "password": "pass3",
-      "name": "Fabrizio Del Giudice",
-      "id": "6"
+      "name": "Fabrizio",
+      "id": "6",
+      "age": 28,
+      "photo": "https://randomuser.me/api/portraits/men/1.jpg"
     },
     {
       "email": "pippo@pippa.com",
       "password": "pass4",
       "name": "pippolo",
-      "id": "7"
+      "id": "7",
+      "age": 28,
+      "photo": "https://randomuser.me/api/portraits/men/1.jpg"
     },
     {
       "id": "e2d1",
       "name": "Valerio",
       "email": "persianivalerio0@gmail.com",
       "password": "pass5",
+      "age": 28,
+      "photo": "https://randomuser.me/api/portraits/men/1.jpg",
       "favorites": []
     }
   ],

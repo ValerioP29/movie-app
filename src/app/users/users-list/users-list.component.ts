@@ -1,5 +1,13 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { UserService } from '../users.service';
+
+interface User {
+photo: string;
+  id: number;
+  name: string;
+  email: string;
+  age: number;
+}
 
 @Component({
   selector: 'app-users-list',
@@ -7,14 +15,13 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./users-list.component.scss']
 })
 export class UsersListComponent implements OnInit {
-  users: any[] = [];
+  users: User[] = [];
 
-  constructor(private http: HttpClient) {}
+  constructor(private userService: UserService) {}
 
-  ngOnInit() {
-    this.http.get<any[]>('http://localhost:3000/users').subscribe(
-      (users) => (this.users = users),
-      (error) => console.error('Error loading users:', error)
-    );
+  ngOnInit(): void {
+    this.userService.getUsers().subscribe(data => {
+      this.users = data;
+    });
   }
 }

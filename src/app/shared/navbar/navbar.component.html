@@ -6,4 +6,7 @@
   <button mat-button routerLink="/movies" *ngIf="isLoggedIn">Movies</button>
   <button mat-button routerLink="/profile" *ngIf="isLoggedIn">Profile</button>
   <button mat-button (click)="logout()" *ngIf="isLoggedIn">Logout</button>
+  <button mat-button routerLink="/users" *ngIf="isLoggedIn">
+    Utenti Registrati
+  </button>
 </mat-toolbar>
